@@ -1,3 +1,3 @@
 Code for project
-SimpleClassifiers contains Logistic Regression, Random Forest, SVM and NN.
-Fixed bug in confusion matrix code - was taking wrong argument.
+Baseline Classifier performs some basic data analysis  and contains Logistic Regression, Random Forest, SVM and NN classifiers.
+FI2010 provides plots of handcrafted features
