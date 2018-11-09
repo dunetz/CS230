@@ -100,10 +100,4 @@ class Model():
 		print('[Model] Training Completed. Model saved as %s' % save_fname)
 		timer.stop()
 		return history
-    
-	def predict_point_by_point(self, data):
-		#Predict each timestep given the last sequence of true data, in effect only predicting 1 step ahead each time
-		print('[Model] Predicting Point-by-Point...')
-		predicted = self.model.predict(data)
-		predicted = np.reshape(predicted, (predicted.size,))
-		return predicted
+  
