@@ -1,0 +1,30 @@
+{
+	"training": {
+         "sequence_length": 5,
+		"epochs": 10,
+		"batch_size": 25
+	},
+	"model": {
+		"loss": "categorical_crossentropy",
+		"optimizer": "adam",
+		"save_dir": "saved_models",
+		"layers": [
+			{
+				"type": "lstm",
+				"neurons": 50,
+				"input_timesteps": 5,
+				"input_dim": 40,
+				"return_seq": false
+			},
+			{
+				"type": "dropout",
+				"rate": 0.2
+			},
+			{
+				"type": "dense",
+				"neurons": 3,
+				"activation": "softmax"
+			}
+		]
+	}
+}
